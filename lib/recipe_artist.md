@@ -118,11 +118,10 @@ _Include the status code and the response body._
 ```
 # Scenario 1
 ```
-# GET /albums
+# GET /artists
 #  Expected response (200 OK):
 """
-Album(1, Greatest Hits, 1981, 1)
-Album(2, Iowa, 2001, 2)
+Pixies, ABBA, Taylor Swift, Nina Simone
 """
 ```
 # Scenario 2
@@ -138,8 +137,9 @@ Album(2, Iowa, 2001, 2)
 ```
 # Scenario 3 
 ```
-# POST /albums
-# Expected response (400 Bad request)
+GET /artists
+# Expected response (200 OK)
+Pixies, ABBA, Taylor Swift, Nina Simone, Wild nothing
 ```
 
 ## 3. Test-drive the Route
